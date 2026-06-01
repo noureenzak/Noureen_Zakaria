@@ -1,31 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Noureen Zakaria</title>
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      background: #f4f4f4;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+    .card {
+      background: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+      padding: 2.5rem 2rem;
+      width: 100%;
+      max-width: 360px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .avatar {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: #dbeafe;
+      color: #1d4ed8;
+      font-size: 22px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.25rem;
+    }
+    h1 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #111111;
+      margin-bottom: 6px;
+    }
+    .sub {
+      font-size: 13px;
+      color: #555555;
+      line-height: 1.6;
+      margin-bottom: 4px;
+    }
+    .email {
+      font-size: 12px;
+      color: #999999;
+      margin-bottom: 2rem;
+    }
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      width: 100%;
+    }
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px 20px;
+      border-radius: 12px;
+      border: 1.5px solid #e5e7eb;
+      background: #ffffff;
+      color: #111111;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 500;
+      transition: background 0.15s, border-color 0.15s;
+    }
+    .btn:hover {
+      background: #f9fafb;
+      border-color: #d1d5db;
+    }
+    .btn svg {
+      flex-shrink: 0;
+      color: #555;
+    }
+    .divider {
+      width: 40px;
+      height: 1px;
+      background: #e5e7eb;
+      margin: 1.75rem auto;
+    }
+    .footer {
+      display: flex;
+      gap: 16px;
+      font-size: 12px;
+    }
+    .footer a {
+      color: #aaaaaa;
+      text-decoration: none;
+    }
+    .footer a:hover { color: #666; }
+  </style>
+</head>
+<body>
+  <div class="card">
 
-<h2 class="sr-only">Noureen Zakaria personal landing page with LinkedIn and CV links</h2>
-<div style="min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 2rem; font-family: var(--font-sans);">
+    <div class="avatar">NZ</div>
 
-  <div style="width: 72px; height: 72px; border-radius: 50%; background: var(--color-background-info); display: flex; align-items: center; justify-content: center; font-weight: 500; font-size: 22px; color: var(--color-text-info); margin-bottom: 1.25rem;">NZ</div>
+    <h1>Noureen Zakaria</h1>
+    <p class="sub">BSc Software Engineering &mdash; First Class Honours<br>University of Salford</p>
+    <p class="email">noureenosama00@gmail.com</p>
 
-  <h1 style="font-size: 22px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 0.25rem;">Noureen Zakaria</h1>
-  <p style="font-size: 14px; color: var(--color-text-secondary); margin: 0 0 0.5rem;">BSc Software Engineering · University of Salford</p>
-  <p style="font-size: 13px; color: var(--color-text-tertiary); margin: 0 0 2rem;">noureenosama00@gmail.com</p>
+    <div class="links">
 
-  <div style="display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 300px;">
+      <a class="btn" href="https://www.linkedin.com/in/noureen-zakaria/" target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+          <rect x="2" y="9" width="4" height="12"/>
+          <circle cx="4" cy="4" r="2"/>
+        </svg>
+        View LinkedIn
+      </a>
 
-    <a href="https://www.linkedin.com/in/noureen-zakaria/" target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 10px; padding: 14px 20px; border-radius: var(--border-radius-lg); border: 0.5px solid var(--color-border-secondary); background: var(--color-background-primary); color: var(--color-text-primary); text-decoration: none; font-size: 15px; font-weight: 500;">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-      View LinkedIn
-    </a>
+      <a class="btn" href="https://drive.google.com/file/d/1vK9o0XJr7Jta9u6Yl4yYANaFP9iubtH-/view?usp=sharing" target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+          <polyline points="14 2 14 8 20 8"/>
+          <line x1="16" y1="13" x2="8" y2="13"/>
+          <line x1="16" y1="17" x2="8" y2="17"/>
+        </svg>
+        View CV
+      </a>
 
-    <a href="https://drive.google.com/file/d/1vK9o0XJr7Jta9u6Yl4yYANaFP9iubtH-/view?usp=sharing" target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 10px; padding: 14px 20px; border-radius: var(--border-radius-lg); border: 0.5px solid var(--color-border-secondary); background: var(--color-background-primary); color: var(--color-text-primary); text-decoration: none; font-size: 15px; font-weight: 500;">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-      View CV
-    </a>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="footer">
+      <a href="https://github.com/noureenzak" target="_blank" rel="noopener">GitHub</a>
+      <span style="color:#ddd">·</span>
+      <a href="https://portfolio.com" target="_blank" rel="noopener">Portfolio</a>
+    </div>
 
   </div>
-
-  <p style="font-size: 12px; color: var(--color-text-tertiary); margin-top: 2.5rem;">
-    <a href="https://github.com/name" target="_blank" style="color: var(--color-text-tertiary); text-decoration: none;">github.com/name</a>
-    &nbsp;·&nbsp;
-    <a href="https://portfolio.com" target="_blank" style="color: var(--color-text-tertiary); text-decoration: none;">portfolio.com</a>
-  </p>
-
-</div>
+</body>
+</html>
